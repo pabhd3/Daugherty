@@ -3,9 +3,8 @@
 #     Create a functions that takes a string and returns either true or false
 #     depending on whether or not its an isogram.
 
-word1 = "unit"
-word2 = "daugherty"
-word3 = "bananna"
+import argparse
+
 
 def isogramChecker(word):
     # Set empty list of used letters
@@ -23,7 +22,16 @@ def isogramChecker(word):
         letters.append(letter.capitalize())
     return isIsogram
 
-print("Isogram Checker\n")
-print(word1 + " - ", isogramChecker(word1))
-print(word2 + " - ", isogramChecker(word2))
-print(word3 + " - ", isogramChecker(word3))
+
+def main():
+    # Set up Argparse
+    parser = argparse.ArgumentParser(description='Check if word is an isogram')
+    parser.add_argument('word', metavar='Word', type=str,
+                        help='Text to Encrypt of Decrypt')
+    args = parser.parse_args()
+
+    print("\n", args.word, "-", isogramChecker(args.word))
+
+
+if __name__ == '__main__':
+    main()
