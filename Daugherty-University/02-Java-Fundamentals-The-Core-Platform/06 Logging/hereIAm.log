@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-02-01T20:27:52.989151600Z</date>
+  <millis>1517516872989</millis>
+  <nanos>151600</nanos>
+  <sequence>3</sequence>
+  <logger>test2Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>fileLogging</method>
+  <thread>1</thread>
+  <message>The INFO File Message Logged</message>
+</record>
+<record>
+  <date>2018-02-01T20:27:53.004751Z</date>
+  <millis>1517516873004</millis>
+  <nanos>751000</nanos>
+  <sequence>4</sequence>
+  <logger>test2Logger</logger>
+  <level>WARNING</level>
+  <class>Main</class>
+  <method>fileLogging</method>
+  <thread>1</thread>
+  <message>The WARNNG File Message Logged</message>
+</record>
+<record>
+  <date>2018-02-01T20:27:53.004751Z</date>
+  <millis>1517516873004</millis>
+  <nanos>751000</nanos>
+  <sequence>5</sequence>
+  <logger>test2Logger</logger>
+  <level>SEVERE</level>
+  <class>Main</class>
+  <method>fileLogging</method>
+  <thread>1</thread>
+  <message>The SEVERE File Message Logged</message>
+</record>
+</log>
