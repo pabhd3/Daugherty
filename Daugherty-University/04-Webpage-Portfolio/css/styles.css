@@ -1,0 +1,16 @@
+body {
+    background: #f6f6f6
+}
+
+.bg {
+    background: #123edf;
+    color: #ffffff
+}
+
+.splash {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
