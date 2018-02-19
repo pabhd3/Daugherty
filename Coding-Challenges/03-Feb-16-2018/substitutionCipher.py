@@ -1,41 +1,79 @@
-def substitutionEncryption(plaintext):
-    KEY = {"A": "Z", "B": "E", "C": "B", "D": "R", "E": "A",
-           "F": "S", "G": "C", "H": "D", "I": "F", "J": "G",
-           "K": "H", "L": "I", "M": "J", "N": "K", "O": "L",
-           "P": "M", "Q": "N", "R": "O", "S": "P", "T": "Q",
-           "U": "T", "V": "U", "W": "V", "X": "W", "Y": "X", "Z": "Y"}
-    
+def substitutionEncryption(keyword, plaintext):
+    # Base alphabet used to make our key
+    ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    # Key used to encrypt the plaintext
+    KEY = keyword.upper()
+
+    # Create the encryption key using the key word
+    # For each letter in the normal alphabet
+    for letter in ALPHABET:
+        # If it wasn't in the keyword
+        if(letter not in KEY):
+            # Add it to the key
+            KEY += letter
+
     ciphertext = ""
 
+    # For each character in the plaintext message
     for letter in plaintext:
+        # Check if it a letter
         if letter.isalpha():
-            ciphertext += KEY[letter.capitalize()]
-    
+            # If so, get its index from the original alphabet
+            index = ALPHABET.find(letter.upper())
+            # Add its substituted letter using the index and
+            #     the key we generated
+            ciphertext += KEY[index]
+    # We need to format the ciphertext
     count = 0
     ciphertextFormatted = ""
+    # For each letter in the cipher text
     for letter in ciphertext:
+        # We can only have 5 characters at a time
         if(count % 5 == 0 and count != 0):
             ciphertextFormatted += " "
+        # And we can only have 5 sets of 5 characters on a line
+        if(count % 25 == 0 and count != 0):
+            ciphertextFormatted += "\n"
+        # And a block can only have 250 characters in it
+        if(count % 250 == 0 and count != 0):
+            ciphertextFormatted += "\n"
+        # Add the letter
         ciphertextFormatted += letter
+        # And increase the count
         count += 1
-
+    # And we're done
     return ciphertextFormatted
 
-def substitutionDecryption(ciphertext):
-    KEY = {"A": "Z", "B": "E", "C": "B", "D": "R", "E": "A",
-           "F": "S", "G": "C", "H": "D", "I": "F", "J": "G",
-           "K": "H", "L": "I", "M": "J", "N": "K", "O": "L",
-           "P": "M", "Q": "N", "R": "O", "S": "P", "T": "Q",
-           "U": "T", "V": "U", "W": "V", "X": "W", "Y": "X", "Z": "Y"}
+def substitutionDecryption(keyword, ciphertext):
+    # Base alphabet used to make our key
+    ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    # Key used to encrypt the plaintext
+    KEY = keyword.upper()
+
+    # Create the encryption key using the key word
+    # For each letter in the normal alphabet
+    for letter in ALPHABET:
+        # If it wasn't in the keyword
+        if(letter not in KEY):
+            # Add it to the key
+            KEY += letter
+
     plaintext = ""
-    
+    # For each character in our ciphertext
     for letter in ciphertext:
-        if(letter.isalnum()):
-            count = 0
-            for key in KEY:
-                if(letter.capitalize() == KEY[key]):
-                    plaintext += key
+        # If the character is a letter
+        if(letter.isalpha()):
+            # Get its index in the KEY
+            index = KEY.find(letter.upper())
+            # And add the plaintext using the index and the alphabet
+            plaintext += ALPHABET[index]
+    # And we're done
     return plaintext
 
-print(substitutionEncryption("flee at once. we are discovered!"))
-print(substitutionDecryption("SIAAZ QLKBA VAZOA RFPBL UAOAR"))
+# Set up the main
+def main():
+    print(substitutionEncryption("zebras", "abcdefghijklmnopqrstuvwxyz"))
+    print(substitutionDecryption("zebras", "ZEBRA SCDFG HIJKL MNOPQ TUVWX\nY"))
+
+if __name__ == '__main__':
+    main()
