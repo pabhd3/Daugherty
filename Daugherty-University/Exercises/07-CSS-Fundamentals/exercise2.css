@@ -6,3 +6,7 @@ TODO:
 - Do not modify the HTML, and do not use class or id selectors.
 Note: a good style to test this is a border style
 */
+
+main > div {
+    border: 1px solid #000000;
+}

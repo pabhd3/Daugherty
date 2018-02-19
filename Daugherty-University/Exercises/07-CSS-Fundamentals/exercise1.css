@@ -1,14 +1,15 @@
-/*
-TODO:
-Style the class “my-button” with the following default style:
+.my-button {
+    background: #000000;
+    color: #808080;
+    font-size: 24px;
+    border: #000000;
+    border-width: 1px;
+    opacity: 0.4;
+    transition: all 1s ease
+}
 
-- black background
-- gray text color
-- Text size of 24 pixels
-- Black 1 pixel border
-- Opacity of 40%
-
-When the user hovers over the button, change the background to blue and text color to white.
-The opacity should be 100%.
-Make a transition effect for all styles with a duration of 1 second.
-*/
+.my-button:hover {
+    background: #0000ff;
+    color: #ffffff;
+    opacity: 1;
+}
