@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!-- Head Section -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Peter Banko Portfolio</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/fontawesome-all.css" rel="stylesheet">
+        <link href="css/lightbox.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300|Over+the+Rainbow" rel="stylesheet">
+    </head>
+    <!-- Body Section -->
+    <body data-spy="scroll" data-target="#main-nav">
+        <!-- Header Section -->
+        <header class="bg-background">
+            <div class="container splash">
+                <h1>Hello, I am Peter</h1>
+                <p>Software Engineer & Consultant</p>
+                <a type="button" class="btn btn-default btn-lg page-scroll" href="#">Learn More</a>
+            </div>
+        </header>
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand page-scroll" href="#">Peter</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="main-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- About Me Section -->
+        <section class="container-fluid text-center" id="about">
+            <h2>About Me</h2>
+            <hr>
+            <img src="img/me.jpg" class="rounded-circle" alt="Peter Banko">
+            <p>Meow meow meow meow</p>
+            <p>Meow Meow meow meow Meow meow</p>
+        </section>
+        <!-- Skills Section -->
+        <section class="container-fluid text-center bg" id="skills"> 
+            <h2>Skills</h2>
+            <hr>
+            <div class="row">
+                <ul class="col-md-4 skill-group">
+                    <li>Python3</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                </ul>
+                <ul class="col-md-4 skill-group">
+                    <li>Git</li>
+                    <li>Microsoft Office</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+                <ul class="col-md-4 skill-group">
+                    <li>GO</li>
+                    <li>Elm</li>
+                    <li>IntelliJ IDE</li>
+                    <li>Visual Studio IDE</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="container-fluid text-center" id="portfolio">
+            <h2>Portfolio</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="img/app.jpg" data-lightbox="image-1" data-title="App Photo">
+                        <h4>App Photo</h4>
+                        <img class="img-responsive" src="img/app.jpg" alt="App Photo">    
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="img/calendar.jpg" data-lightbox="image-1" data-title="Calendar Photo">
+                        <h4>Calendar Photo</h4>
+                        <img class="img-responsive" src="img/calendar.jpg" alt="Calendar Photo">    
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="img/template.jpg" data-lightbox="image-1" data-title="Template Photo">
+                        <h4>Template Photo</h4>
+                        <img class="img-responsive" src="img/template.jpg" alt="Template Photo">    
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="img/website.jpg" data-lightbox="image-1" data-title="Website Photo">
+                        <h4>Calendar Photo</h4>
+                        <img class="img-responsive" src="img/website.jpg" alt="Website Photo">    
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Me Section -->
+        <section class="container-fluid text-center bg" id="contact">
+            <h2>Contact</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 flex-container">
+                    <div>
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>123 Street St.<br>
+                        St. Louis, MO 63043</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <p>email.address@domain.com</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone fa-2x"></i>
+                        <p>+1 234.567.8900</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Leave me a message</h3>
+            <form class="row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group col-md-12">
+                    <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-default">Send Message</button>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-md-12 flex-container">
+                    <ul class="list-unstyled social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer class="container text-center">
+
+        </footer>
+        <!-- Script Section -->
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/fontawesome-all.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

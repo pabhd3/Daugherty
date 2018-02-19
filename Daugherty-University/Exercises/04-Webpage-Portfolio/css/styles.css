@@ -1,0 +1,78 @@
+body {
+  background: #f6f6f6;
+}
+
+.bg {
+  background-color: #7bc3d1;
+  color: #fff;
+}
+
+.bg-background {
+  background-image: url("../img/bg-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* Bootstrap responsive image fix */
+.img-responsive {
+  width: 100%;
+}
+
+/* Splash */
+.splash {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.splash h1 {
+  font-family: 'Montserrat', sans-serif;
+  size: 20px;
+  letter-spacing: 5px;
+}
+
+.splash p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+}
+
+/* Skills */
+.skill-group {
+  list-style: none;
+  padding: 0;
+}
+
+/* Contact Me */
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  margin:30px;
+}
+
+.rounded-circle {
+    height: 250px
+}
+
+hr {
+    height: 4px;
+    width: 150px;
+    background: #7bc3d1;
+    border: 0
+}
+
+#contact hr, #skills hr {
+    background: #fff
+}
