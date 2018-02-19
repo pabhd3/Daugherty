@@ -27,7 +27,7 @@ def main():
     # Set up Argparse
     parser = argparse.ArgumentParser(description='Check if word is an isogram')
     parser.add_argument('word', metavar='Word', type=str,
-                        help='Text to Encrypt of Decrypt')
+                        help='Word to test is an isogram')
     args = parser.parse_args()
 
     print("\n", args.word, "-", isogramChecker(args.word))
