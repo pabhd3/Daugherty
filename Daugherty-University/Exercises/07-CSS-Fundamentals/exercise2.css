@@ -1,0 +1,8 @@
+/*
+TODO:
+- In index.html there is a hierarchy of nested divs (<div> tags) inside a “main” tag.
+- Apply styling to the divs Child 1 and Child 2 only
+- Ensure that Inner Child 1 and Inner Child 2 don't inherit the styling.
+- Do not modify the HTML, and do not use class or id selectors.
+Note: a good style to test this is a border style
+*/
