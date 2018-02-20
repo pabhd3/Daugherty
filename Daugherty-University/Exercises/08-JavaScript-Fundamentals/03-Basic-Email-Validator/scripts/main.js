@@ -1,12 +1,22 @@
-/**
- * Function that validates the provided email address by making sure that it contains:
- * At least an "@"
- * At least a "." after the "@"
- * @param emailAddress String with the given email address
- * @returns Boolean true if the given email address is valid, false otherwise
- */
 function isEmailValid (emailAddress) {
-    // Your code goes here
+    console.log(emailAddress);
+    var validEmail = false;
+    var atSymbolFirst = false;
+    var dotAfterAtSymbol = false;
+    for(var i=0; i<emailAddress.length; i++) {
+        if(emailAddress[i] == "@") {
+            atSymbolFirst = true;
+        }
+        if(atSymbolFirst) {
+            if(emailAddress[i] == ".") {
+                dotAfterAtSymbol = true;
+            }
+        }
+    }
+    if(atSymbolFirst && dotAfterAtSymbol) {
+        validEmail = true;
+    }
+    return validEmail;
 }
 
 // Test it with these values
