@@ -1,7 +1,7 @@
 // Declare Values
-var notYetHuman = true;
-var firstTry = true;
-var num1, num2, sum, promptMessage, promptReply, confirmMessage, confirmReply;
+let notYetHuman = true;
+let firstTry = true;
+let num1, num2, sum, promptMessage, promptReply, confirmMessage, confirmReply;
 while(notYetHuman) {
     console.log("Starting Test");
     // Generate Prompt

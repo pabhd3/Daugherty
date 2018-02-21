@@ -1,7 +1,27 @@
-/**
- * Constructor of a Book object
- */
-// Your code goes here
+class Book {
+    constructor() {
+        this.page = "";
+    }
+
+    addPage(string) {
+        this.page += " " + string;
+    }
+
+    countOccurrences(word) {
+        let allWords = this.page.split(" ");
+        let count = 0;
+        for(let i in allWords) {
+            if(allWords[i].toUpperCase() == word.toUpperCase()) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    logAllText() {
+        console.log(this.page);
+    }
+}
 
 
 // Creating an instance

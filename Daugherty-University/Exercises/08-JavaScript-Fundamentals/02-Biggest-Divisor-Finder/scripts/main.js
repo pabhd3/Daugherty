@@ -1,8 +1,8 @@
 function findBiggestDivisor (positiveInteger) {
     console.log("Finding the biggest divisor of: " + positiveInteger);
-    var returnMsg = "Biggest divisor of " + positiveInteger.toString() + " is ";
-    var GCD = 1;
-    for(var i=1; i<positiveInteger; i++) {
+    let returnMsg = "Biggest divisor of " + positiveInteger.toString() + " is ";
+    let GCD = 1;
+    for(let i=1; i<positiveInteger; i++) {
         if(positiveInteger % i == 0) {
             if(i > GCD) {
                 GCD = i;

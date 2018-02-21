@@ -1,8 +1,27 @@
-/**
- * Constructor of a Baseball Player object
- * @param name String with the name of the player
- */
-// Your code goes here
+class BaseballPlayer {
+   constructor(name) {
+       this.name = name;
+       this.SuccessfulBattingAttempts = 0;
+       this.strikes = 0;
+   }
+
+   hit() {
+       let success = Math.round(Math.random());
+       if(success == 1) {
+           this.SuccessfulBattingAttempts++;
+       } else {
+           this.SuccessfulBattingAttempts--;
+       }
+   }
+
+   getSuccessfulBattingAttempts() {
+       return this.SuccessfulBattingAttempts;
+   }
+
+   showSuccessfulBattingAttempts() {
+       console.log(`${this.name}: ${this.getSuccessfulBattingAttempts()} hits`);
+   }
+}
 
 // Creating instances and running them
 var matt = new BaseballPlayer("Matt");

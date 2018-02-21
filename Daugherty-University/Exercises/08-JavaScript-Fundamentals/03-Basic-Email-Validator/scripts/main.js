@@ -1,9 +1,9 @@
 function isEmailValid (emailAddress) {
     console.log(emailAddress);
-    var validEmail = false;
-    var atSymbolFirst = false;
-    var dotAfterAtSymbol = false;
-    for(var i=0; i<emailAddress.length; i++) {
+    let validEmail = false;
+    let atSymbolFirst = false;
+    let dotAfterAtSymbol = false;
+    for(let i=0; i<emailAddress.length; i++) {
         if(emailAddress[i] == "@") {
             atSymbolFirst = true;
         }

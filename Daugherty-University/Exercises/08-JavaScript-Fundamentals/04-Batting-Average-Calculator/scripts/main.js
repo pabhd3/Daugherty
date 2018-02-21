@@ -4,10 +4,19 @@
  * @returns Number with the batting average of the player
  */
 function calculateBattingAverage (strikes) {
-    // Your code goes here
+    var demStrikes = 0;
+    var count = 0;
+    for(var i in strikes) {
+        if(strikes[i] === false) {
+            demStrikes++;
+        }
+        count++;
+    }
+    return demStrikes/count;
 }
 
 // Test it with these values
 var exampleStrikes = [true, true, false, true, false, true, true, true, true, false, false, true, true, true, true];
+console.log("exampleStrikes: " + exampleStrikes);
 console.log(calculateBattingAverage(exampleStrikes)); // returns 0.26666666666666666
 

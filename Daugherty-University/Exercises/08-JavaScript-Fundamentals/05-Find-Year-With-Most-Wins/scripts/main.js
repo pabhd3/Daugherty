@@ -1,9 +1,14 @@
-/**
- * Function that finds the year with most wins and prints to the console the year, the number of wins, and the place
- * @param statsByYear Object with years as keys, and stats objects as values (which contain the following properties: wins, loses and place)
- */
 function logYearWithMostWins(yearlyStats) {
-    // Your code goes here
+    let mostWinsIndex = 0;
+    let mostWins = 0;
+    for(let i in yearlyStats) {
+        if(yearlyStats[i].wins > mostWins) {
+            mostWins = yearlyStats[i].wins;
+            mostWinsIndex = i;
+        }
+    }
+    let msg = `The year with most wins was ${mostWinsIndex} with ${mostWins} victories, and the finishing place was ${yearlyStats[mostWinsIndex].place}`;
+    console.log(msg);
 }
 
 // Test it with these values
