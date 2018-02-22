@@ -20,6 +20,7 @@ class BaseballPlayer {
 
    showSuccessfulBattingAttempts() {
        console.log(`${this.name}: ${this.getSuccessfulBattingAttempts()} hits`);
+       document.write(`${this.name}: ${this.getSuccessfulBattingAttempts()} hits<br>`);
    }
 }
 

@@ -10,16 +10,21 @@ function findBiggestDivisor (positiveInteger) {
         }
     }
     if(GCD != 1) {
-        returnMsg += GCD.toString();
+        returnMsg += GCD.toString() + "<br>";
     } else {
-        returnMsg += "NaN"
+        returnMsg += "NaN<br>";
     }
     return returnMsg;
 }
 
 // Test it with different values
 console.log(findBiggestDivisor(7));
+document.write(findBiggestDivisor(7));
 console.log(findBiggestDivisor(20));
+document.write(findBiggestDivisor(20));
 console.log(findBiggestDivisor(432));
+document.write(findBiggestDivisor(432));
 console.log(findBiggestDivisor(1958));
+document.write(findBiggestDivisor(1958));
 console.log(findBiggestDivisor(70831));
+document.write(findBiggestDivisor(70831));

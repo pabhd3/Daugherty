@@ -9,6 +9,7 @@ function logYearWithMostWins(yearlyStats) {
     }
     let msg = `The year with most wins was ${mostWinsIndex} with ${mostWins} victories, and the finishing place was ${yearlyStats[mostWinsIndex].place}`;
     console.log(msg);
+    document.write(msg);
 }
 
 // Test it with these values

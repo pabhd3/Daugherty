@@ -25,3 +25,6 @@ function fizzBuzz(n) {
 console.log(fizzBuzz(5));
 console.log(fizzBuzz(9));
 console.log(fizzBuzz(15));
+document.write(fizzBuzz(5) + "<br>");
+document.write(fizzBuzz(9) + "<br>");
+document.write(fizzBuzz(15));

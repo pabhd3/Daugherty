@@ -3,7 +3,6 @@ let notYetHuman = true;
 let firstTry = true;
 let num1, num2, sum, promptMessage, promptReply, confirmMessage, confirmReply;
 while(notYetHuman) {
-    console.log("Starting Test");
     // Generate Prompt
     num1 = Math.floor(Math.random() * 100);
     num2 = Math.floor(Math.random() * 100);
@@ -22,10 +21,10 @@ while(notYetHuman) {
         confirmMessage = "Are you sure that " + num1.toString() + " + " + num2.toString() + " = " + promptReply.toString() + "?";
         confirmReply = confirm(confirmMessage);
     }
-    console.log("Point B");
     if(promptReply == sum) {
         notYetHuman = false;
         console.log("Human user identified");
+        document.write("Human user identified");
     } else {
         firstTry = false;
     }

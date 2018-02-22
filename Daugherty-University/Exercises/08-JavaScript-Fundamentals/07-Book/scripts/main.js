@@ -1,15 +1,16 @@
 class Book {
     constructor() {
-        this.page = "";
+        this.page = [];
     }
 
-    addPage(string) {
-        this.page += " " + string;
+    addPage(str) {
+        this.page.push(str);
     }
 
     countOccurrences(word) {
-        let allWords = this.page.split(" ");
         let count = 0;
+        let allWords = this.page.join(" ").split(" ");
+
         for(let i in allWords) {
             if(allWords[i].toUpperCase() == word.toUpperCase()) {
                 count++;
@@ -19,7 +20,9 @@ class Book {
     }
 
     logAllText() {
-        console.log(this.page);
+        for(let i in this.page) {
+            console.log(this.page[i]);
+        }
     }
 }
 

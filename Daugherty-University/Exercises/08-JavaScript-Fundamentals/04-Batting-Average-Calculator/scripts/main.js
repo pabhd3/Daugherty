@@ -18,5 +18,7 @@ function calculateBattingAverage (strikes) {
 // Test it with these values
 var exampleStrikes = [true, true, false, true, false, true, true, true, true, false, false, true, true, true, true];
 console.log("exampleStrikes: " + exampleStrikes);
+document.write("exampleStrikes: " + exampleStrikes);
 console.log(calculateBattingAverage(exampleStrikes)); // returns 0.26666666666666666
+document.write("<br>" + calculateBattingAverage(exampleStrikes)); // returns 0.26666666666666666
 
