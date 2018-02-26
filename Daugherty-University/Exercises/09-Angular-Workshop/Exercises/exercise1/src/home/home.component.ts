@@ -8,12 +8,11 @@ import { User } from "../shared/user";
 })
 export class HomeComponent {
   public loggedInUser: User;
-  // TODO: Bind username and password to inputs
   public user: User = new User();
 
-  // TODO: Bind login to button
   public login(): void {
-    // TODO: Validate inputs are defined
-    // TODO: Assign username to loggedInUser
+    if (this.user.username !== undefined && this.user.password !== undefined) {
+      this.loggedInUser.username = this.user.username;
+    }
   }
 }
