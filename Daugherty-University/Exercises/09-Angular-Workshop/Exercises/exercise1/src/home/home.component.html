@@ -1,0 +1,22 @@
+<div class="home" fxLayout="column">
+    <div fxLayout="row">
+        <div fxFlex></div>
+      <!-- TODO: Hide div when loggedInUser is defined -->
+        <div fxFlex class="home-login">
+            <h3>Daugherty U Login</h3>
+
+            <form #userLoginForm="ngForm" fxLayout="column">
+                <mat-form-field>
+                    <!-- TODO: Bind to user.username via ngModel -->
+                    <input type="text" id="username" name="username" matInput required placeholder="Username">
+                </mat-form-field>
+                <mat-form-field>
+                    <!-- TODO: Bind to user.password via ngModel -->
+                    <input type="password" id="password" name="password" matInput required placeholder="Password">
+                </mat-form-field>
+                <button type="submit" mat-raised-button color="primary" class="home-login-button">Sign In</button>
+            </form>
+        </div>
+        <div fxFlex></div>
+    </div>
+</div>

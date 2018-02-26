@@ -1,0 +1,50 @@
+<div class="user" fxLayout="column">
+    <div fxLayout="row" fxLayoutAlign="center">
+        <div fxFlex class="user-list" fxLayout="column">
+            <h3>Users</h3>
+
+            <div fxLayout="row">
+
+            <!--TODO: add dropdown with fields to search by first name, last name, username, and email -->
+            <!--TODO: add search input-->
+            <!--TODO: add order by ascending/descending -->
+            <!--TODO: add filter by active status  -->
+
+            </div>
+            
+            <mat-table #table [dataSource]="users">
+                <ng-container matColumnDef="id">
+                    <mat-header-cell class="user-list-id" *matHeaderCellDef> Id </mat-header-cell>
+                    <mat-cell class="user-list-id" *matCellDef="let user"> {{user.id}} </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="username">
+                    <mat-header-cell class="user-list-name" *matHeaderCellDef> Username </mat-header-cell>
+                    <mat-cell class="user-list-name" *matCellDef="let user"> {{user.username}} </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="firstName">
+                    <mat-header-cell class="user-list-name" *matHeaderCellDef> First Name </mat-header-cell>
+                    <mat-cell class="user-list-name" *matCellDef="let user"> {{user.firstName}} </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="lastName">
+                    <mat-header-cell class="user-list-name" *matHeaderCellDef> Last Name </mat-header-cell>
+                    <mat-cell class="user-list-name" *matCellDef="let user"> {{user.lastName}} </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="email">
+                    <mat-header-cell class="user-list-email" *matHeaderCellDef> Email </mat-header-cell>
+                    <mat-cell  class="user-list-email" *matCellDef="let user"> {{user.email}} </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="phone">
+                    <mat-header-cell class="user-list-phone" *matHeaderCellDef> Phone </mat-header-cell>
+                    <mat-cell class="user-list-phone" *matCellDef="let user"> {{user.phone}} </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="dob">
+                    <mat-header-cell class="user-list-dob" *matHeaderCellDef> Date of Birth </mat-header-cell>
+                    <mat-cell class="user-list-dob" *matCellDef="let user"> {{user.dob}} </mat-cell>
+                </ng-container>
+                <mat-header-row *matHeaderRowDef="userColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: userColumns;"></mat-row>
+
+            </mat-table>
+        </div>
+    </div>
+</div>

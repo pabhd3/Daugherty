@@ -1,0 +1,91 @@
+@import './_colors.scss';
+.user {
+    &-list {
+        padding: 4em;
+        max-width: 80em;
+        &-filter,
+        &-search {
+            margin-right: 1em;
+        }
+         ::ng-deep &-sortBy>label {
+            position: relative;
+            top: 1em;
+            margin-right: 1em;
+        }
+        &-id {
+            max-width: 3em;
+        }
+        &-phone {
+            max-width: 8em;
+        }
+        &-name {
+            max-width: 14em;
+        }
+        &-email {
+            max-width: 20em;
+        }
+        &-dob {
+            max-width: 14em;
+        }
+        &-active {
+            max-width: 3em;
+        }
+        &-row {
+            cursor: pointer;
+            &:hover {
+                background-color: $primaryLight;
+            }
+        }
+    }
+    &-create {
+      &-link {
+        color: $white;
+        height: 3em;
+      }
+      &-button {
+        color: $white;
+      }
+      &-form {
+        &-row {
+          > mat-form-field {
+            margin-right: 1em;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      &-username {
+        width: 20em;
+      }
+      &-dob, &-phone, &-zip {
+        width: 10em;
+      }
+    }
+    &-cancel {
+      &-button {
+        margin-right: 1em;
+      }
+    }
+    &-view, &-create {
+        padding-top: 1em;
+        &-container {
+            min-width: 20em;
+            max-width: 40em;
+        }
+    }
+    &-active {
+        color: $primaryLight;
+    }
+    &-inactive {
+        color: $grey;
+    }
+    &-subheader {
+      color: $grey;
+    }
+}
+
+.mat-header-cell {
+    font-size: 0.9em;
+}

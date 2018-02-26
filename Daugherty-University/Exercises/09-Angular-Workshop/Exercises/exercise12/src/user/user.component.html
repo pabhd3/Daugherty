@@ -1,0 +1,64 @@
+<div class="user" fxLayout="column">
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div fxFlex class="user-list" fxLayout="column">
+      <h3>Users</h3>
+
+      <div fxLayout="row">
+        <mat-form-field class="user-list-filter">
+          <mat-select placeholder="Sort By" [(value)]="searchBy" (selectionChange)="search()">
+            <mat-option *ngFor="let filter of userFilters" [value]="filter.value">
+              {{ filter.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field fxFlex class="user-list-search">
+          <input matInput [(ngModel)]="searchFor" (keyup)="search()" placeholder="Filter">
+        </mat-form-field>
+        <mat-checkbox class="user-list-sortBy" color="primary" [(ngModel)]="sortAsc" (change)="search()">Sort Asc</mat-checkbox>
+
+        <a class="user-create-link" mat-raised-button type="button" color="primary" [routerLink]="['/users/create']" fxLayout="row" fxLayoutAlign="center center">
+          <i class="fa fa-plus"></i> 
+          <span>User</span>
+        </a>
+      </div>
+
+      <mat-table #table [dataSource]="users">
+        <ng-container matColumnDef="id">
+          <mat-header-cell class="user-list-id" *matHeaderCellDef> Id </mat-header-cell>
+          <mat-cell class="user-list-id" *matCellDef="let user"> {{user.id}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="username">
+          <mat-header-cell class="user-list-name" *matHeaderCellDef> Username </mat-header-cell>
+          <mat-cell class="user-list-name" *matCellDef="let user"> {{user.username}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="firstName">
+          <mat-header-cell class="user-list-name" *matHeaderCellDef> First Name </mat-header-cell>
+          <mat-cell class="user-list-name" *matCellDef="let user"> {{user.firstName}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="lastName">
+          <mat-header-cell class="user-list-name" *matHeaderCellDef> Last Name </mat-header-cell>
+          <mat-cell class="user-list-name" *matCellDef="let user"> {{user.lastName}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="email">
+          <mat-header-cell class="user-list-email" *matHeaderCellDef> Email </mat-header-cell>
+          <mat-cell class="user-list-email" *matCellDef="let user"> {{user.email}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="phone">
+          <mat-header-cell class="user-list-phone" *matHeaderCellDef> Phone </mat-header-cell>
+          <mat-cell class="user-list-phone" *matCellDef="let user"> {{user.phone}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="dob">
+          <mat-header-cell class="user-list-dob" *matHeaderCellDef> Date of Birth </mat-header-cell>
+          <mat-cell class="user-list-dob" *matCellDef="let user"> {{user.dob | date:'MM/dd/yyyy'}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="isActive">
+          <mat-header-cell class="user-list-active" *matHeaderCellDef> Active </mat-header-cell>
+          <mat-cell class="user-list-active" *matCellDef="let user"> {{user.active}} </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="userColumns"></mat-header-row>
+        <mat-row class="user-list-row" *matRowDef="let row; columns: userColumns;" (click)="navigateToUser(row)"></mat-row>
+
+      </mat-table>
+    </div>
+  </div>
+</div>

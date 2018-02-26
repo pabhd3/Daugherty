@@ -1,0 +1,460 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "exercises"
+  },
+  "apps": [
+    {
+      "name": "exercise0",
+      "root": "exercise0/src",
+      "outDir": "exercise0/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "../../shared/environments/environment.ts",
+      "environments": {
+        "dev": "../../shared/environments/environment.ts",
+        "prod": "../../shared/environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise1",
+      "root": "exercise1/src",
+      "outDir": "exercise1/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise2",
+      "root": "exercise2/src",
+      "outDir": "exercise2/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise3",
+      "root": "exercise3/src",
+      "outDir": "exercise3/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise4",
+      "root": "exercise4/src",
+      "outDir": "exercise4/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise5",
+      "root": "exercise5/src",
+      "outDir": "exercise5/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise6",
+      "root": "exercise6/src",
+      "outDir": "exercise6/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise7",
+      "root": "exercise7/src",
+      "outDir": "exercise7/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise8",
+      "root": "exercise8/src",
+      "outDir": "exercise8/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise9",
+      "root": "exercise9/src",
+      "outDir": "exercise9/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise10",
+      "root": "exercise10/src",
+      "outDir": "exercise10/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise11",
+      "root": "exercise11/src",
+      "outDir": "exercise11/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "exercise12",
+      "root": "exercise12/src",
+      "outDir": "exercise12/dist",
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "../../shared/assets/",
+          "output": "./assets/"
+        },
+        "../../shared/favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../shared/styles.scss",
+        "../../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "lint": [
+    {
+      "project": "exercise0/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise1/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise2/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise3/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise4/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise5/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise6/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise7/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise8/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise9/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise10/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise11/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "exercise12/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "component": {}
+  }
+}

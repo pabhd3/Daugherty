@@ -1,0 +1,55 @@
+<div class="user-view" fxLayout="column">
+  <div fxLayout="row">
+    <div fxFlex></div>
+    <mat-card fxFlex class="user-view-container">
+      <mat-card-header>
+        <mat-card-title>
+          <h1>
+            <i [title]="user?.active ? 'Active' : 'Inactive'" class="fa fa-circle" [ngClass]="{'user-active': user?.active, 'user-inactive': !user?.active }"></i>&nbsp;
+            <span>{{user?.firstName}} {{user?.lastName}}</span>
+            <small class="user-subheader">{{user?.username}}</small>
+          </h1>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div fxLayout="column">
+          <h3>Personal Information</h3>
+
+          <dl class="dl-horizontal">
+            <dt>Gender</dt>
+            <dd>{{ user?.gender }}</dd>
+          </dl>
+
+          <dl class="dl-horizontal">
+            <dt>Birth Date</dt>
+            <dd>{{ user?.dob }}</dd>
+          </dl>
+
+          <dl class="dl-horizontal">
+            <dt>Email</dt>
+            <dd>{{ user?.email }}</dd>
+          </dl>
+
+          <dl class="dl-horizontal">
+            <dt>Phone</dt>
+            <dd>{{ user?.phone }}</dd>
+          </dl>
+
+          <dl class="dl-horizontal">
+            <dt>Address</dt>
+            <dd>
+              {{ user?.address.line1 }}
+              <br/>
+              <span ng-if="!!user?.address.line2">
+                {{ user?.address.line2 }}
+                <br/>
+              </span>
+              {{ user?.address.city }} {{ user?.address.state }} {{ user?.address.zip }}
+            </dd>
+          </dl>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <div fxFlex></div>
+  </div>
+</div>

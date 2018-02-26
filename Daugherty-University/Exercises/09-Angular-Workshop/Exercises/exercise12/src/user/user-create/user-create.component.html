@@ -1,0 +1,114 @@
+<div class="user-create" fxLayout="column">
+  <div fxLayout="row">
+    <div fxFlex></div>
+    <mat-card fxFlex class="user-create-container">
+      <mat-card-header>
+        <mat-card-title>
+          <h1>
+            Create User
+          </h1>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form #userCreateForm="ngForm" fxLayout="column" (ngSubmit)="createUser(userCreateForm)">
+
+          <mat-form-field class="user-create-username">
+            <input type="text" id="username" name="username" matInput [(ngModel)]="user.username" required placeholder="Username">
+            <mat-error>
+              This field is required
+            </mat-error>
+          </mat-form-field>
+
+          <div fxLayout="row" class="user-create-form-row">
+            <mat-form-field fxFlex>
+              <input type="text" id="firstName" name="firstName" matInput [(ngModel)]="user.firstName" required placeholder="First name">
+              <mat-error>
+                This field is required
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+              <input type="text" id="lastName" name="lastName" matInput [(ngModel)]="user.lastName" required placeholder="Last name">
+              <mat-error>
+                This field is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <mat-form-field class="user-create-dob">
+            <input type="date" id="dob" name="dob" matInput [(ngModel)]="user.dob" required placeholder="Date of Birth">
+            <mat-error>
+              This field is required
+            </mat-error>
+          </mat-form-field>
+
+          <label class="radio-label">Gender</label>
+          <mat-radio-group [(ngModel)]="user.gender" id="gender" name="gender" required>
+            <mat-radio-button color="primary" [value]="'M'">
+              Male
+            </mat-radio-button>
+            <mat-radio-button color="primary" [value]="'F'">
+              Female
+            </mat-radio-button>
+          </mat-radio-group>
+
+          <mat-form-field>
+            <input type="text" id="email" name="email" matInput [(ngModel)]="user.email" required placeholder="Email">
+            <mat-error>
+              This field is required
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="user-create-phone">
+            <input type="text" id="phone" name="phone" matInput [(ngModel)]="user.phone" required placeholder="Phone">
+            <mat-error>
+              This field is required
+            </mat-error>
+          </mat-form-field>
+
+          <label>Address</label>
+          <mat-form-field>
+            <input type="text" id="line1" name="line1" matInput [(ngModel)]="user.address.line1" required placeholder="Line 1">
+            <mat-error>
+              This field is required
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input type="text" id="line2" name="line2" matInput [(ngModel)]="user.address.line2" placeholder="Line 2">
+          </mat-form-field>
+
+          <div fxLayout="row" class="user-create-form-row">
+            <mat-form-field fxFlex>
+              <input type="text" id="city" name="city" matInput [(ngModel)]="user.address.city" required placeholder="City">
+              <mat-error>
+                This field is required
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+              <input type="text" id="state" name="state" matInput [(ngModel)]="user.address.state" required placeholder="State">
+              <mat-error>
+                This field is required
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="user-create-zip">
+              <input type="text" id="zip" name="zip" matInput [(ngModel)]="user.address.zip" required placeholder="Zip">
+              <mat-error>
+                This field is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div fxLayout="row">
+            <div fxFlex></div>
+            <a [routerLink]="['/users']" mat-raised-button class="user-cancel-button">Cancel</a>
+            <button type="submit" mat-raised-button color="primary" class="user-create-button">Create</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+    <div fxFlex></div>
+  </div>
+</div>

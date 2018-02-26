@@ -1,0 +1,5 @@
+--require test/du-ts-node.js
+--require source-map-support/register 
+--full-trace
+--exit
+test/**/*.spec.ts
